@@ -75,12 +75,6 @@ const translations = {
         message: "Mototsikl - bu ikki g‘ildirakli motorli transport vositasi bo‘lib, shaxsiy foydalanish, sport, sayohat va hatto yuk tashish uchun ishlatiladi. Ular tezkorligi, manevrliligi va yoqilg‘i tejamkorligi bilan ajralib turadi.",
         Left: "Qoldi 1",
         back: "Orqaga",
-        all: "Hammasi",
-        scooters: "Samokatlar",
-        bicycles: "Velosipedlar",
-        motorcycles: "Mototsikillar",
-        parts: "Zapchastlar",
-        cart: "Savat"
     },
     ru: {
         welcome: "Добро пожаловать",
@@ -89,12 +83,6 @@ const translations = {
         message: "Мотоцикл - это двухколесное мототранспортное средство, которое используется для личного пользования, занятий спортом, путешествий и даже перевозки грузов. Они характеризуются скоростью, маневренностью и топливной экономичностью.",
         Left: "Oсталось 1",
         back: "Назад",
-        all: "Все",
-        scooters: "Самокаты",
-        bicycles: "Велосипеды",
-        motorcycles: "Мотоциклы",
-        parts: "Запчасти",
-        cart: "Корзина"
     }
 };
 
@@ -102,7 +90,6 @@ document.addEventListener("DOMContentLoaded", function () {
     const flags = document.querySelectorAll(".flag-image");
 
     function changeLanguage(lang) {
-        // Ensure the language exists in translations
         if (!translations[lang]) {
             lang = "uz";  
         }
@@ -112,18 +99,9 @@ document.addEventListener("DOMContentLoaded", function () {
         document.querySelector(".moto-desc").textContent = translations[lang].message;
         document.querySelector(".productTitle-div p").textContent = translations[lang].Left;
         document.querySelector(".back-btn").textContent = translations[lang].back;
-        document.querySelector(".cart-title").textContent = translations[lang].cart;
 
-        
         document.querySelectorAll(".addCart-button").forEach(button => {
             button.childNodes[0].textContent = translations[lang].addToCart + " ";
-        });
-
-        document.querySelectorAll(".filter-btn").forEach((btn) => {
-            const filterType = btn.dataset.filter;
-            if (translations[lang][filterType]) {
-                btn.innerHTML = translations[lang][filterType]; 
-            }
         });
 
         localStorage.setItem("language", lang);
