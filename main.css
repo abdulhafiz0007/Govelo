@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+    text-decoration-line: none;
+}
+
+body {
+    background-color: black;
+}
+
+
+.site-header__top {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 4px;
+    border-radius: 5px;
+    background-color: rgb(35, 59, 181);
+}
+
+.site-header__top p, h3 {
+    color: #fff;
+}
+
+.header-top__contact {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.header-top__contact a {
+    color: #fff;
+    margin-top: 3px;
+}
+
+.flag-image {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
+
+.swiper {
+    width: 400px;
+}
+
+.swiper-wrapper {
+    margin-top: 10px;
+    text-align: center;
+
+}
+
+.navSwiper {
+    width: 350px;
+    margin-top: 15px;
+}
+
+.slide-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.navbar__item-link {
+    display: block;
+    padding: 6px 14px;
+    border: none;
+    border-radius: 25px;
+    text-decoration-line: none;
+    color: #000;
+    background-color: rgb(234, 224, 224);
+}
+
+.navbar__item-link:hover {
+    background: rgb(35, 59, 181);
+    color: white;
+}
+
+.product-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    width: 400px;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.product-container img {
+    width: 100%;
+    height: 150px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.product-container p {
+    margin: 3px 0;
+    color: #fff;
+}
+
+.product-container p span {
+    font-size: 14px;
+    text-decoration-line: line-through;
+}
+
+.product {
+    border: 2px solid white;
+    border-radius: 10px;
+}
+
+.product-content {
+    position: relative;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.addCart-button {
+    margin-top: 10px;
+    padding: 6px 14px;
+    border: none;
+    border-radius: 25px;
+    color: #fff;
+    background-color: rgb(35, 59, 181);
+}
+
+
+
+
+
+
+
+
+
+
+/* @media screen and (min-width: 600px) {
+    
+} */
+
+
+
